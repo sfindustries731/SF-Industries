@@ -1,0 +1,1074 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070b14;
+    color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #070b14;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+    .logo span {
+        color: #38bdf8;
+    }
+
+
+/* Navigation links */
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+    nav a {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+
+        /* Active page */
+
+        nav a.active {
+            color: #38bdf8;
+        }
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient( circle at center, #172554 0%, #070b14 60% );
+}
+
+
+.hero-content {
+    max-width: 850px;
+}
+
+
+/* Small heading */
+
+.small-title {
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+
+/* Main heading */
+
+.hero h1 {
+    font-size: 80px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+    .hero h1 span {
+        color: #38bdf8;
+    }
+
+
+/* Description */
+
+.hero-description {
+    max-width: 650px;
+    margin: auto;
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* Main button */
+
+.primary {
+    background: #38bdf8;
+    color: #020617;
+}
+
+    .primary:hover {
+        transform: translateY(-3px);
+        background: #7dd3fc;
+    }
+
+
+/* Secondary button */
+
+.secondary {
+    border: 1px solid #334155;
+    color: white;
+}
+
+    .secondary:hover {
+        border-color: #38bdf8;
+        color: #38bdf8;
+        transform: translateY(-3px);
+    }
+
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects {
+    padding: 100px 7%;
+    text-align: center;
+}
+
+
+/* Small section title */
+
+.section-title {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+.projects h2,
+.featured h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+
+/* Cards container */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Card */
+
+.project-card {
+    padding: 35px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        border-color: #38bdf8;
+    }
+
+
+/* Icon */
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.project-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+
+.project-card p {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+.project-card a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FEATURED PROJECT
+========================= */
+
+.featured {
+    padding: 100px 20px;
+    text-align: center;
+    background: #0f172a;
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+}
+
+
+    .featured h2 {
+        margin-bottom: 15px;
+    }
+
+
+    .featured > p:not(.section-title) {
+        color: #94a3b8;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+    }
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    background: #020617;
+}
+
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    color: #64748b;
+}
+
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   GAMES PAGE
+========================= */
+
+.games-hero {
+    text-align: center;
+    padding: 110px 20px 90px;
+    background: radial-gradient( circle at center, #172554 0%, #070b14 65% );
+    border-bottom: 1px solid #1e293b;
+}
+
+
+    .games-hero h1 {
+        font-size: 65px;
+        margin: 15px 0;
+    }
+
+
+        .games-hero h1 span {
+            color: #38bdf8;
+        }
+
+
+    .games-hero > p:last-child {
+        color: #94a3b8;
+        font-size: 18px;
+    }
+
+
+/* =========================
+   GAMES SECTION
+========================= */
+
+.games-section {
+    padding: 90px 7%;
+}
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+    .section-heading h2 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+
+.games-description {
+    max-width: 650px;
+    margin: auto;
+    color: #94a3b8;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   GAME SEARCH BOX
+========================= */
+
+.game-search {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 55px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+    .game-search input {
+        width: 100%;
+        height: 65px;
+        padding: 0 28px;
+        font-size: 19px;
+        color: white;
+        background: #0f172a;
+        border: 2px solid #1e293b;
+        border-radius: 14px;
+        outline: none;
+        transition: 0.3s;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+
+        .game-search input::placeholder {
+            color: #64748b;
+        }
+
+
+        .game-search input:focus {
+            border-color: #38bdf8;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+        }
+
+
+/* =========================
+   GAMES GRID
+========================= */
+
+.games-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   GAME CARD
+========================= */
+
+.game-card {
+    overflow: hidden;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+    .game-card:hover {
+        transform: translateY(-8px);
+        border-color: #38bdf8;
+    }
+
+
+/* Game Image */
+
+.game-image {
+    height: 220px;
+    background: #020617;
+}
+
+
+.game-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+
+/* Game Content */
+
+.game-content {
+    padding: 28px;
+}
+
+
+.game-type {
+    color: #38bdf8;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.game-content h3 {
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+
+.game-content > p {
+    color: #94a3b8;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+
+/* =========================
+   GAME INFORMATION
+========================= */
+
+.game-info {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    color: #cbd5e1;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   GAME BUTTONS
+========================= */
+
+.game-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+    .game-buttons .btn {
+        padding: 11px 18px;
+        font-size: 14px;
+    }
+
+
+/* =========================
+   NO GAMES MESSAGE
+========================= */
+
+.no-games {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .games-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+
+    .game-search {
+        max-width: 600px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+
+    .projects h2,
+    .featured h2 {
+        font-size: 32px;
+    }
+
+
+    .games-hero h1 {
+        font-size: 45px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .game-search input {
+        height: 58px;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}
+/* =========================
+   SF VYAPAR APP DETAILS
+========================= */
+/* =========================
+   SF VYAPAR HERO - UPDATED
+========================= */
+
+.app-details-hero {
+    min-height: 560px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background: radial-gradient( circle at 25% 50%, #172554 0%, #070b14 55%, #020617 100% );
+    border-bottom: 1px solid #1e293b;
+    overflow: hidden;
+}
+
+
+/* =========================
+   SF VYAPAR LOGO
+========================= */
+
+.app-icon-large {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+
+    /* If logo is an image */
+
+    .app-icon-large img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+
+/* =========================
+   APP CONTENT
+========================= */
+
+.app-details-content {
+    max-width: 650px;
+}
+
+
+    .app-details-content h1 {
+        font-size: 65px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+
+        .app-details-content h1 span {
+            color: #38bdf8;
+        }
+
+
+    .app-details-content > p:last-of-type {
+        color: #94a3b8;
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+    .app-buttons .btn {
+        padding: 15px 28px;
+    }
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .app-details-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 25px;
+        gap: 40px;
+    }
+
+
+    .app-icon-large {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    .app-details-content {
+        max-width: 700px;
+    }
+
+
+        .app-details-content h1 {
+            font-size: 55px;
+        }
+
+
+    .app-buttons {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .app-details-hero {
+        padding: 60px 20px;
+    }
+
+
+    .app-icon-large {
+        width: 170px;
+        height: 170px;
+    }
+
+
+    .app-details-content h1 {
+        font-size: 42px;
+    }
+
+
+    .app-details-content > p:last-of-type {
+        font-size: 17px;
+    }
+}
+
+
+/* App Icon */
+
+.app-icon-large {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 35px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* App Content */
+
+.app-details-content {
+    max-width: 650px;
+}
+
+
+    .app-details-content h1 {
+        font-size: 65px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+
+
+        .app-details-content h1 span {
+            color: #38bdf8;
+        }
+
+
+    .app-details-content > p:last-of-type {
+        color: #94a3b8;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+
+/* App Buttons */
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   APP DETAILS
+========================= */
+
+.app-details {
+    padding: 90px 7%;
+}
+
+
+.app-section {
+    max-width: 1100px;
+    margin: 0 auto 90px;
+}
+
+
+    .app-section h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+
+    .app-section > p:not(.section-title) {
+        max-width: 800px;
+        color: #94a3b8;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.app-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+
+.feature-card {
+    padding: 30px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+    .feature-card:hover {
+        transform: translateY(-7px);
+        border-color: #38bdf8;
+    }
+
+
+    .feature-card > div {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+
+    .feature-card h3 {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+
+    .feature-card p {
+        color: #94a3b8;
+        line-height: 1.6;
+    }
+
+
+/* =========================
+   APP INFORMATION
+========================= */
+
+.app-info-box {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+    .app-info-box > div {
+        padding: 20px 25px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        background: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 10px;
+    }
+
+
+    .app-info-box strong {
+        color: #cbd5e1;
+    }
+
+
+    .app-info-box span {
+        color: #38bdf8;
+    }
+
+
+/* =========================
+   DOWNLOAD SECTION
+========================= */
+
+.download-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 30px;
+    text-align: center;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 20px;
+}
+
+
+    .download-section h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+
+    .download-section > p:not(.section-title) {
+        color: #94a3b8;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+    }
+
+
+/* =========================
+   APP DETAILS MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .app-details-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+
+    .app-details-content {
+        max-width: 700px;
+    }
+
+
+        .app-details-content h1 {
+            font-size: 55px;
+        }
+
+
+    .app-buttons {
+        justify-content: center;
+    }
+
+
+    .app-features {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .app-info-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .app-details-hero {
+        padding: 70px 20px;
+    }
+
+
+    .app-icon-large {
+        width: 150px;
+        height: 150px;
+        font-size: 70px;
+        border-radius: 28px;
+    }
+
+
+    .app-details-content h1 {
+        font-size: 42px;
+    }
+
+
+    .app-details-content > p:last-of-type {
+        font-size: 17px;
+    }
+
+
+    .app-details {
+        padding: 70px 20px;
+    }
+
+
+    .app-section h2 {
+        font-size: 32px;
+    }
+
+
+    .download-section {
+        padding: 50px 20px;
+    }
+
+
+        .download-section h2 {
+            font-size: 32px;
+        }
+}
+/* =========================
+   APP CARD IMAGE
+========================= */
+
+.app-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* SF Vyapar logo styling */
+
+.game-image:has(.app-card-image) {
+    background: #020617;
+    overflow: hidden;
+}
+
+
+    .game-image:has(.app-card-image) .app-card-image {
+        transition: 0.4s;
+    }
+
+
+.game-card:hover .app-card-image {
+    transform: scale(1.05);
+}
